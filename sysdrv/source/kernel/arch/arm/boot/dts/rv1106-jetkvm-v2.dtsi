@@ -114,11 +114,11 @@
 	};
 };
 
-&i2c4 {
+&i2c3 {
 	status = "okay";
 	clock-frequency = <400000>;
 	pinctrl-names = "default";
-	pinctrl-0 = <&i2c4m2_xfer>;
+	pinctrl-0 = <&i2c3m2_xfer>;
 
 	tc358743: tc358743@0f {
 		compatible = "toshiba,tc358743";
@@ -126,7 +126,7 @@
 		reg = <0x0f>;
 		clocks = <&hdmi_osc>;
 		clock-names = "refclk";
-		reset-gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_LOW>;
+		//reset-gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_LOW>;
 		rockchip,camera-module-index = <0>;
 		rockchip,camera-module-facing = "back";
 		rockchip,camera-module-name = "TC358743XBG";
