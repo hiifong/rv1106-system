@@ -52,6 +52,7 @@ export RK_BOOTARGS_CMA_SIZE="48M"
 
 # export RK_PARTITION_CMD_IN_ENV="32K(env),512K@32K(idblock),256K(uboot_a),256K(uboot_b),256K(misc),32M(boot_a),32M(boot_b),512M(system_a),512M(system_b),256M(oem),-(userdata)"
 # export RK_PARTITION_CMD_IN_ENV="32K(env),512K@32K(idblock),256K(uboot_a),256K(uboot_b),256K(misc),32M(boot_a),32M(boot_b),512M(system_a),512M(system_b),13640M(userdata)"
+
 export RK_PARTITION_CMD_IN_ENV="32K(env),512K@32K(idblock),256K(uboot_a),256K(uboot_b),256K(misc),32M(boot_a),32M(boot_b),512M(system_a),512M(system_b),-(userdata)"
 
 # config partition's filesystem type (squashfs is readonly)
